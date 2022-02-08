@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="no-js"
+  data-controller="scrollable "
+  data-action="click->scrollable#navigate DOMContentLoaded@window->scrollable#goToHash hashchange@window->scrollable#goToHash">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  
+  <!-- Title -->
+<title>Troubleshooting · Sketch</title>
+<meta property="og:title" content="Troubleshooting" />
+<meta name="twitter:title" content="Troubleshooting" />
+
+<!-- Description -->
+
+<!-- Images -->
+<meta property="og:image" content="https://www.sketch.com/images/metadata/preview-square.jpg" />
+<meta name="twitter:card" content="summary" />
+
+<!-- Canonical URLs -->
+<link rel="canonical" href="troubleshooting.html" />
+<meta property="og:url" content="https://www.sketch.com/support/troubleshooting/" />
+
+<!-- Non page-specific metadata -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Sketch" />
+<meta name="twitter:site" content="@sketch" />
+<link rel="alternate" type="application/atom+xml" title="RSS Feed for the Sketch Blog" href="../../blog/feed.xml" />
+
+<!-- Icons -->
+<link rel="icon" type="image/svg+xml" href="../../images/metadata/icon-16.svg" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../images/metadata/icon-16_2.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../images/metadata/icon-32_2.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="../../images/metadata/icon-96_2.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="152x152" href="../../images/metadata/icon-152_2.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="167x167" href="../../images/metadata/icon-167_2.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="180x180" href="../../images/metadata/icon-180_2.png" />
+
+
+  
+
+<link href="../../css/styles.legacy.e46be97d16.css" rel="stylesheet preload" as="style" />
+
+
+
+
+
+<script>
+  window.SENTRY_RELEASE_NAME = 'production_20220207-1519_jbdPi2iR3_EA'
+</script>
+<script defer src="../../js/sentry.1b5bfe40b4ab52a7b29f_2.js"></script>
+
+
+
+<script defer src="../../js/script.61fdb5d9fafb182d634d_2.js"></script>
+
+
+
+<script src="../../js/algoliasearch.min.js"></script>
+
+<script src="../../js/autocomplete.min.js"></script>
+
+
+
+  <script defer src="../../js/google-analytics.dedf771a217961ac690c_2.js"></script>
+
+<script defer src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+  
+
+</head>
+<body class="bg-hero-default-top-mono ">
+  
+
+  
+
+<a href="troubleshooting.html#content" class="main-nav-skip">
+    Skip Navigation
+  </a>
+
+<header
+  class="main-nav"
+  data-controller="main-nav"
+  data-action="resize@window->main-nav#resized keydown@document->main-nav#keyPressed storage@window->main-nav#checkLoginState"
+  data-scrollable-target="sticky"
+  >
+  <nav class="main-nav__inner"><div class="main-nav__bar">
+      <div class="main-nav__controls" data-main-nav-target="navToggle">
+        <button
+          data-action="main-nav#toggleNav"
+          aria-expanded="false"
+          class="main-nav__toggle"
+          id="main-nav-toggle"
+          title="Toggle Menu"
+          aria-controls="main-nav-menu">
+          <!-- CSS Icon -->
+          <span class="main-nav__toggle__icon">
+            <span class="main-nav__toggle__icon__line main-nav__toggle__icon__line--top"></span>
+            <span class="main-nav__toggle__icon__line main-nav__toggle__icon__line--bottom"></span>
+          </span>
+          <span class="visuallyhidden">Menu</span>
+        </button>
+      </div>
+
+      <div class="main-nav__logo">
+        <a class="main-nav__logo__link" href="../../home/home.html" title="Go to Homepage">
+          <span class="main-nav__logo__shape"></span>
+          <span class="main-nav__logo__name">Sketch</span>
+        </a>
+      </div>
+
+      <div class="main-nav__persistent">
+        <div class="main-nav__persistent__profile is-hidden" data-main-nav-target="authProfile"></div>
+        <ul class="main-nav__persistent__actions is-hidden" data-main-nav-target="authActions">
+            <li class="main-nav__item
+              ">
+              <a
+                href="../../signin/signin.html"
+                class="main-nav__link main-nav__link--action"
+                data-event-type="sign-in" data-event-label="Header"
+
+                >Sign In</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div><div class="main-nav__menu" id="main-nav-menu" id="main-nav-menu" aria-labelledby="main-nav-toggle"><ul class="main-nav__menu__pages"><li class="main-nav__item">
+              <a
+                href="../../design/design.html"
+                class="main-nav__link"
+                
+                >Design</a>
+            </li><li class="main-nav__item">
+              <a
+                href="../../collaborate/collaborate.html"
+                class="main-nav__link"
+                
+                >Collaborate</a>
+            </li><li class="main-nav__item">
+              <a
+                href="../../apps/apps.html"
+                class="main-nav__link"
+                
+                >Apps</a>
+            </li><li
+              class="main-nav__item main-nav__subnav"
+              data-main-nav-target="subnav"
+            >
+              <button
+                class="main-nav__link main-nav__subnav__toggle"
+                data-action="main-nav#toggleSubnav"
+              >
+                Resources
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__link__icon">
+  <path stroke-width="1.5" d="M2.75 6L8 11.25 13.25 6" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+              </button>
+              <div class="main-nav__subnav__menu-wrapper">
+                <div class="main-nav__subnav__menu">
+                  <ul class="main-nav__subnav__items"><li class="main-nav__subnav__item">
+                        <div class="main-nav__subnav__header">
+                          
+                          <a href="../support.html" class="main-nav__subnav__header__icon-link" tabindex="-1">
+                            <span class="main-nav__subnav__header__icon main-nav__subnav__header__icon--help"></span>
+                          </a>
+                          
+                          <dl class="main-nav__subnav__header__text">
+                            <dt class="main-nav__subnav__header__label">
+                              <a href="../support.html" class="main-nav__subnav__link">
+                                Get Help
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__subnav__link__icon">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="6.25 3.75 10.5 8 6.25 12.25"></polyline>
+</svg>
+
+                              </a>
+                            </dt>
+                            <dd class="main-nav__subnav__header__description">Read our <a class="main-nav__subnav__header__description__link" href="../support.html">documentation and FAQs</a>, or <a class="main-nav__subnav__header__description__link" href="../contact/contact.html">get in touch</a>.</dd>
+                          </dl>
+                        </div>
+                        
+                      </li><li class="main-nav__subnav__item">
+                        <div class="main-nav__subnav__header">
+                          
+                          <a href="../../extensions/extensions.html" class="main-nav__subnav__header__icon-link" tabindex="-1">
+                            <span class="main-nav__subnav__header__icon main-nav__subnav__header__icon--extensions"></span>
+                          </a>
+                          
+                          <dl class="main-nav__subnav__header__text">
+                            <dt class="main-nav__subnav__header__label">
+                              <a href="../../extensions/extensions.html" class="main-nav__subnav__link">
+                                Extensions
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__subnav__link__icon">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="6.25 3.75 10.5 8 6.25 12.25"></polyline>
+</svg>
+
+                              </a>
+                            </dt>
+                            <dd class="main-nav__subnav__header__description">Do even more with <a class="main-nav__subnav__header__description__link" href="../../extensions/assistants/assistants.html">Assistants</a>, <a class="main-nav__subnav__header__description__link" href="../../extensions/plugins/plugins.html">plugins</a> and <a class="main-nav__subnav__header__description__link" href="../../extensions/integrations/integrations.html">integrations</a>.</dd>
+                          </dl>
+                        </div>
+                        
+                      </li><li class="main-nav__subnav__item">
+                        <div class="main-nav__subnav__header">
+                          
+                          <a href="../../community/community.html" class="main-nav__subnav__header__icon-link" tabindex="-1">
+                            <span class="main-nav__subnav__header__icon main-nav__subnav__header__icon--events"></span>
+                          </a>
+                          
+                          <dl class="main-nav__subnav__header__text">
+                            <dt class="main-nav__subnav__header__label">
+                              <a href="../../community/community.html" class="main-nav__subnav__link">
+                                Events & Meetups
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__subnav__link__icon">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="6.25 3.75 10.5 8 6.25 12.25"></polyline>
+</svg>
+
+                              </a>
+                            </dt>
+                            <dd class="main-nav__subnav__header__description">Discover and join your local Sketch community.</dd>
+                          </dl>
+                        </div>
+                        
+                          
+
+
+
+
+
+
+
+  
+    <div class="main-nav__subnav__placeholder">
+      <p>There are no upcoming events.</p>
+      <p>Want to host your own event? <a class="main-nav__subnav__placeholder__link" href="mailto:community@sketch.com">Get in touch</a>.</p>
+    </div>
+  
+
+
+
+                        
+                      </li><li class="main-nav__subnav__item">
+                        <div class="main-nav__subnav__header">
+                          
+                          <a href="../../blog/blog.html" class="main-nav__subnav__header__icon-link" tabindex="-1">
+                            <span class="main-nav__subnav__header__icon main-nav__subnav__header__icon--blog"></span>
+                          </a>
+                          
+                          <dl class="main-nav__subnav__header__text">
+                            <dt class="main-nav__subnav__header__label">
+                              <a href="../../blog/blog.html" class="main-nav__subnav__link">
+                                Blog
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__subnav__link__icon">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="6.25 3.75 10.5 8 6.25 12.25"></polyline>
+</svg>
+
+                              </a>
+                            </dt>
+                            <dd class="main-nav__subnav__header__description">Get updates, articles and insights from the team.</dd>
+                          </dl>
+                        </div>
+                        
+                          
+  <ol class="main-nav__subnav__sublist main-nav__subnav__sublist--blog">
+      <li class="main-nav__subnav__subitem">
+        <time
+          data-controller="relative-date"
+          data-relative-date-date-value="2022-02-07"
+          
+          class="main-nav__subnav__time "
+          datetime="2022-02-07"
+          title="2022-02-07"
+        >Feb  7</time>
+        <a href="../../blog/2022/02/07/editing-symbols/editing-symbols.html" class="main-nav__subnav__sublink" >How to edit Symbols and set resizing options</a>
+      </li>
+      <li class="main-nav__subnav__subitem">
+        <time
+          data-controller="relative-date"
+          data-relative-date-date-value="2022-02-03"
+          
+          class="main-nav__subnav__time "
+          datetime="2022-02-03"
+          title="2022-02-03"
+        >Feb  3</time>
+        <a href="../../blog/2022/02/03/github-actions-work-with-sketch-documents/github-actions-work-with-sketch-documents.html" class="main-nav__subnav__sublink" >Open format: using GitHub Actions to work with Sketch documents</a>
+      </li>
+      <li class="main-nav__subnav__subitem">
+        <time
+          data-controller="relative-date"
+          data-relative-date-date-value="2022-01-31"
+          
+          class="main-nav__subnav__time "
+          datetime="2022-01-31"
+          title="2022-01-31"
+        >Jan 31</time>
+        <a href="../../blog/2022/01/31/create-symbols-sketch/create-symbols-sketch.html" class="main-nav__subnav__sublink" >How to create Symbols with Sketch</a>
+      </li></ol>
+
+
+
+
+                        
+                      </li></ul>
+                </div>
+              </div>
+            </li><li class="main-nav__item">
+              <a
+                href="../../pricing/pricing.html"
+                class="main-nav__link"
+                
+                >Pricing</a>
+            </li></ul><div class="main-nav__menu__auth">
+        <div class="main-nav__menu__auth__profile is-hidden" data-main-nav-target="authProfile"></div>
+        <ul class="main-nav__menu__auth__actions is-hidden" data-main-nav-target="authActions">
+          
+          <li class="main-nav__item
+            
+            main-nav__item--persistent
+          ">
+            <a
+              href="../../signin/signin.html"
+              class="
+              main-nav__link main-nav__link--action"
+              data-event-type="sign-in" data-event-label="Header"
+
+              >Sign In</a>
+          </li>
+          
+          <li class="main-nav__item
+            main-nav__item--cta
+            
+          ">
+            <a
+              href="../../signup/signup.html"
+              class="
+              button button--primary button--compact"
+              data-event-type="sign-up" data-event-label="Header"
+
+              >Sign Up for Free</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+
+  
+
+  <main id="content">
+  
+
+
+
+<section
+  class="secondary-nav pad-viewport"
+  data-scrollable-target="sticky"
+  data-controller="search-input-container">
+  <!-- prettier-ignore -->
+  <div class="wrapper secondary-nav__content"><div class="secondary-nav__nav-items">
+        
+        <a class="secondary-nav__nav-item" href="../support.html">Get Help</a>
+        
+      </div>
+      
+
+
+
+
+<div
+  class="algolia-search secondary-nav__search"
+  data-controller="search"
+  data-action="resize@window->search#resize"
+  data-search-filters-value="NOT search_categories:Blog"
+  data-search-show-recommendations-value="true"
+  data-search-recommendations-heading-value="Frequently Asked Questions"
+  data-search-index-name-value="knowledge_base"
+  data-search-show-headings-value="true"
+  data-search-limit-results-value="5"
+  
+  data-search-dropdown-position-value="absolute"
+  data-search-keep-results-open-value="false"
+>
+  <input
+    type="search"
+    
+    
+    
+    
+    data-search-target="input"
+    data-action="focus->search#showOverlay blur->search#hideOverlay keydown->search#keyPressed"
+    autocomplete="off"
+    class="form-input form-input--search form-input--compact secondary-nav__search__input"
+    placeholder="Search FAQs and Documentation"
+  />
+</div>
+
+    
+  </div>
+</section>
+
+<section class="pane pad-viewport support-subpage">
+  <div class="wrapper support-subpage__wrapper">
+    <div class="support-subpage__aside">
+      <div class="sidebar-nav js-toggleable">
+        <h3 class="sidebar-nav__heading">FAQs</h3>
+        <button class="button button--no-transforms button--wide button--no-shadow button--label-left sidebar-nav__dropdown-label js-toggleable-toggle"><span>Troubleshooting</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" aria-hidden="true" focusable="false">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="3.75 6 8 10.25 12.249 6.001"></polyline>
+</svg>
+</button>
+        <ul class="sidebar-nav__nav-items">
+          
+
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../general/general.html">General questions</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../subscriptions-and-workspaces/subscriptions-and-workspaces.html">Subscriptions and Workspaces</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item is-active">
+            <a href="troubleshooting.html">Troubleshooting</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../real-time-collaboration/real-time-collaboration.html">Real-time Collaboration</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../business-plan/business-plan.html">Business Plan</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../mirror/mirror.html">Mirror</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          
+        </ul>
+      </div>
+    </div>
+    <div class="support-subpage__content-wrapper">
+      <div class="support-subpage__content">
+        <h1 class="support-subpage__content__title">Troubleshooting</h1>
+
+        
+
+        <ul class="support-subpage__articles">
+          
+          
+          
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/crash-troubleshooting/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why is the Mac app crashing? Try these solutions</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/performance-issues/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why is the Mac app slow?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="what-is-safe-mode-and-how-do-i-enable-it/what-is-safe-mode-and-how-do-i-enable-it.html" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">What is Safe Mode and how do I enable it?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/full-disk-catalina/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why is the Mac app having trouble saving files to Google Drive?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/sketch-restrictive-network/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">I can’t register Sketch but I’m connected to the internet</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/endpoints-required-for-correct-operation/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Endpoints required for correct operation of the Mac app</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/find-console-output/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">How do I find the Console output to share with my bug report?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/why-cant-i-select-some-layers-in-the-web-inspector/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why can't I select some layers in the web Inspector?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/prototype-not-showing/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why is my prototype not showing in the web app?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/smart-layout-symbols-not-working/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why are my Smart Layout Symbols not working as they should?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/vector-import-export/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">My SVG, EPS or PDF file is not displaying correctly</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/points-vs-pixels/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Does Sketch measure text layers in points or pixels?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/change-custom-shortcuts/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">My custom keyboard shortcuts are not working</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/import-psd-ai/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Do you support other file formats such as Figma, XD, Photoshop, Illustrator, etc?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/sync-local-documents-online/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why can I no longer sync my local documents online?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/sf-symbols-missing/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why am I seeing question marks in Apple's iOS UI Library?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/chinese-localization/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why is the Mac app in Chinese?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/screen-recording-catalina/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why is the Mac app asking for permission to record my screen?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/reporting-bugs/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">I’ve found a bug or have a feature request, how can I report it?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/plugin-issues/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">I have found an issue relating to a plugin. What should I do?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="providing-feedback/providing-feedback.html" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Providing feedback</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/lost-recovery-codes-sign-in/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">I lost my phone and my recovery codes, how can I sign in? </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/older-version-to-82-still-use-2fa/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">I‘m using a previous version to 82, can I still use 2FA?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/i-cant-find-my-2fa-recovery-codes/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">I can't find my 2FA recovery codes (but I'm logged in)</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/troubleshooting/lost-phone-2fa-enabled-access-sketch/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">I lost my phone and I have 2FA enabled, how can I access Sketch?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="pane pad-viewport pane--has-border-top support__contact-us support-subpage__contact-us">
+    <div class="wrapper text-center">
+        <h2 class="pane__heading__title">Can’t find your answer?</h2>
+        <p class="lead pane__heading__lead">Contact us and we’ll get back to you as soon as we can.</p>
+        <div class="pane__heading__actions">
+            
+                <a href="../contact/contact.html" data-event-type="internal" data-event-label="Contact us" class="button button--primary pane__heading__action">Contact us</a>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="pane pad-viewport support__features support-subpage__features pane--no-padding-bottom ">
+  <div class="wrapper">
+    <div class="row center-h">
+
+      
+        
+
+        <div class="col support__feature">
+          <div class="support__feature__card">
+            
+
+
+
+<img
+  
+  class="support__feature__icon"
+  
+  src="../../images/icons/universal/color/64x64/book.sketch@2x.png"
+  srcset="
+      /images/icons/universal/color/64x64/book.sketch.png    1x,
+      /images/icons/universal/color/64x64/book.sketch@2x.png 2x"
+  alt="Documentation"
+  width="64"style="left: -7px;top: -2px;"/>
+
+
+            <div class="support__feature__text">
+              <h3 class="support__feature__title">Documentation</h3>
+              <p class="support__feature__lead">Learn more about how to use the powerful features that Sketch gives you in our documentation.</p>
+              <div class="support__feature__actions">
+              
+                <a class="support__feature__action" data-event-type="internal" data-event-label="Support: Get started" href="../../docs/docs.html">Get started</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+
+        <div class="col support__feature">
+          <div class="support__feature__card">
+            
+
+
+
+<img
+  
+  class="support__feature__icon"
+  
+  src="../../images/icons/universal/color/64x64/workspace@2x.png"
+  srcset="
+      /images/icons/universal/color/64x64/workspace.png    1x,
+      /images/icons/universal/color/64x64/workspace@2x.png 2x"
+  alt="Manage your Workspace"
+  width="64"style="left: -7px;"/>
+
+
+            <div class="support__feature__text">
+              <h3 class="support__feature__title">Manage your Workspace</h3>
+              <p class="support__feature__lead">View your Workspace details, manage your members and more in your Workspace settings.</p>
+              <div class="support__feature__actions">
+              
+                <a class="support__feature__action" data-event-type="internal" data-event-label="Support: Open your Workspace" href="../../c.htm">Open your Workspace</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+
+        <div class="col support__feature">
+          <div class="support__feature__card">
+            
+
+
+
+<img
+  
+  class="support__feature__icon"
+  
+  src="../../images/icons/universal/color/64x64/plan.standard@2x.png"
+  srcset="
+      /images/icons/universal/color/64x64/plan.standard.png    1x,
+      /images/icons/universal/color/64x64/plan.standard@2x.png 2x"
+  alt="Subscriptions"
+  width="64"style="left: -5px;"/>
+
+
+            <div class="support__feature__text">
+              <h3 class="support__feature__title">Subscriptions</h3>
+              <p class="support__feature__lead">Subscriptions are the primary way to use Sketch and we've made switching easy.</p>
+              <div class="support__feature__actions">
+              
+                <a class="support__feature__action" data-event-type="internal" data-event-label="Support: Switch to a subscription" href="../switch-to-subscription/switch-to-subscription.html">Switch to a subscription</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+
+        <div class="col support__feature">
+          <div class="support__feature__card">
+            
+
+
+
+<img
+  
+  class="support__feature__icon"
+  
+  src="../../images/icons/universal/color/64x64/sketch.retail.box@2x.png"
+  srcset="
+      /images/icons/universal/color/64x64/sketch.retail.box.png    1x,
+      /images/icons/universal/color/64x64/sketch.retail.box@2x.png 2x"
+  alt="Legacy licenses"
+  width="64"style="left: -3px;"/>
+
+
+            <div class="support__feature__text">
+              <h3 class="support__feature__title">Legacy licenses</h3>
+              <p class="support__feature__lead">Manage, renew or recover legacy Mac-only (SK3) license keys.</p>
+              <div class="support__feature__actions">
+              
+                <a class="support__feature__action" data-event-type="internal" data-event-label="Support: Manage seats, renew or access invoices" href="../../license/license.html">Manage seats, renew or access invoices</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+    </div>
+  </div>
+</section>
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is the Mac app crashing? Try these solutions",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We do our best to make the Mac app as stable as possible, but if you’re running into issues and experiencing crashes, there are a few things you can try to fix it.
+
+If none of the solutions below work for you, please get in touch with us for more help. If you get in touch, we’ll ask you for a few different things to help us diagnose your issue and find a solution.
+
+Note: If you’re experiencing issues with the Mac app being slow, there are a few other solutions to try, you can find more details in our Why is the Mac app slow? article.
+
+1. Check your plugins
+
+Sometimes an incompatible or outdated plugin may be causing the Mac app to crash. So, it’s a good idea to try using the Mac app without any plugins running, to see if that could be causing your problem.
+
+To disable your plugins temporarily, quit the Mac app and then launch it again while holding down the Shift key ⇧.  This opens the Mac app in Safe Mode and if everything works as expected, a plugin may have been causing the crash.
+
+To find out which plugin(s) are the cause of your problem, close the Mac app and launch without holding ⇧ to enable plugins again. Choose Sketch › Preferences › Plugins and disable or uninstall all of them. Then add them back one by one until you find which plugin is causing you issues.
+
+Note: Some plugins, like Craft, will still be loaded even when you disable them, so uninstalling is the only way to make sure they’re not interfering with the Mac app.
+
+If a plugin is crashing Sketch on launch, you can uninstall all of them by moving the Plugins folder to your Desktop:
+
+
+  Quit the Mac app
+  Open Finder
+  Select Go › Go to Folder… (⌘⇧G)
+  Enter the following path in the dialog that appears: ~/Library/Application Support/com.bohemiancoding.sketch3 and click Go
+  Drag the Plugins folder to your Desktop and relaunch Sketch
+
+
+Now you can proceed to install your plugins one by one, until you find the one that’s causing the crash.
+
+Plugins are created by third-party developers, so you’d need to get in touch with them for further support and assistance. But before you do, try checking to see if there’s an update available for the plugin that’s causing you issues. That can often solve things.
+
+If disabling your plugins doesn’t help, move on to the next suggestion.
+
+2. Restart your Mac
+
+We know this sounds a lot like “Have you tried turning it off and on again?”, but sometimes a simple restart can be a fool-proof way to fix a problem in Sketch.
+
+If possible, save your work, then quit the Mac app and restart your Mac. If a full reboot doesn’t resolve your issue, try the next solution.
+
+3. Remove corrupted preference files
+
+The Mac app stores your preferences in a file, and sometimes this file can get corrupted with bad data. Removing this file forces the Mac app to create a fresh preferences file that won’t cause the same issues.
+
+Don’t worry, we won’t delete the file completely — we’ll just move the file out of the way, so we can restore it later if needed. Follow these steps to remove the file and have Sketch create a new one.
+
+
+  Close the Mac app
+  Open Finder
+  Select Go › Go to Folder… (⌘⇧G)
+  Enter the following path in the dialog that appears: ~/Library/Preferences/com.bohemiancoding.sketch3.plist and click Go
+  The preferences file will be selected. Drag it to your Desktop and relaunch the Mac app
+
+
+If everything is now working as expected, you can delete the preferences file from your Desktop.
+
+Note: When you delete the preferences file you may need to set some preferences in the app and plugins again.
+
+If your issue still isn’t resolved, you can close the Mac app and drag your original preferences file back to its place (overwriting the new version) to restore your user defaults.
+
+4. Re-install the Mac app
+
+A clean re-install of the Mac app may well fix things if the above steps haven’t helped. We recommend you use an uninstaller like AppCleaner (free) to make sure you remove all files related before you install a new copy.
+
+After you have completed uninstalling the Mac app, please re-download the latest version and enter your license key or Sketch Account details again, if prompted. (If you do not have a note of your license key, you can retrieve it over on our License Admin.",
+          "url": "https://www.sketch.com/support/troubleshooting/crash-troubleshooting/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why is the Mac app slow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sketch is great at dealing with complex designs, but if you are experiencing performance issues in the Mac app, there are a few things that may be causing this and some steps you can take to fix them.
+
+If none of the suggestions below help with the issues you’re having, please get in touch with us for more help. We’ll ask you for a few different things to help us investigate your issue and find a solution.
+
+Note: If you’re experiencing issues with the Mac app crashing, there are a few other solutions to try. Read more about How can I stop the Mac app from crashing?
+
+General troubleshooting
+
+Check your plugins
+
+We do our best to check plugins and work directly with plugin developers to prevent issues. But sometimes they can cause issues. To work out if a plugin is at fault, check How do I launch Sketch in Safe Mode?
+
+If you do come across an issue caused by a plugin, check to see if there’s an update available for it, or get in touch with it’s developer for further support and assistance.
+
+Try a complete reinstall
+
+Sometimes a problem with your current installation of the Mac app can cause issues, especially if it’s an update from a previous version. In this case, it’s worth trying a clean reinstall. To do this:
+
+
+  Quit the Mac app and open Finder
+  Select Go › Go to Folder… (⌘⇧G)
+  Enter the following path in the dialog that appears: ~/Library/Application Support/com.bohemiancoding.sketch3 and click Go
+  Copy the Plugins and Libraries folders to your Desktop
+  Download, install and launch AppCleaner (free)
+  Drag the Sketch Application icon from your /Applications folder onto the App Cleaner window
+  Click Remove to have AppCleaner remove all files (not Sketch documents) related to Sketch
+  Download and install the latest version of the Mac app from www.sketch.com/updates
+  Make sure you move the latest version of the Mac app to your Applications folder
+  Launch the Mac app and enter your license Information or log in with your Sketch Account details
+
+
+If you need to, you can now reinstall your Libraries and Plugins by dragging and dropping them onto the relevant pane within the Mac app’s Preferences.
+
+Document-specific troubleshooting
+
+There might also be something in your document itself that is compromising the Mac app’s performance, so we highly recommend checking some of these points:
+
+
+  If you are adding lots of images to a document, a handy solution to keep its size under control is to use the reduce image size feature.
+  Watch out for multiple blurs and shadows, as they require more processing power than regular layers to render them.
+  A large number of Artboards all on the same page might not be the best structure in terms of performance. A good practice to follow is to take advantage of Pages and move some Artboards to different pages.
+  Be aware of importing highly-detailed vector artwork from elsewhere that might contain an extremely high number of bezier curves and points. A typical example of this might be a world map, or a textured pattern.",
+          "url": "https://www.sketch.com/support/troubleshooting/performance-issues/"
+        }
+      },{
+        "@type": "Question",
+        "name": "What is Safe Mode and how do I enable it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sometimes an incompatible plugin may be causing the Mac app to work unexpectedly or crash. You can use Safe Mode to run the Mac app without plugins and see if that’s the case.
+
+How to use Safe Mode
+
+To disable your plugins temporarily, quit the Mac app and then launch it again while holding down the Shift key ⇧. This opens it in Safe Mode and if everything works as expected, a plugin may have been causing the issue.
+
+To find out which plugin(s) are the cause of your problem, close the Mac app and launch it again without holding down the Shift key to enable your plugins again. Choose Sketch › Preferences › Plugins and disable all of them. Then add them back one by one until you find which plugin is causing you issues.
+
+Please note: Some plugins, like Craft, will still be loaded even when you disable them, so uninstalling is the only way to make sure they’re not interfering with the Mac app.
+
+How to manually disable plugins
+
+If a plugin is crashing the Mac app on launch, you can uninstall all of them by moving the Plugins folder to your Desktop:
+
+
+  Quit the Mac app
+  Open Finder
+  Select Go › Go to Folder… (⌘⇧G)
+  Enter the following path in the dialog that appears: ~/Library/Application Support/com.bohemiancoding.sketch3 and click Go
+  Drag the Plugins folder to your Desktop and relaunch Sketch
+
+
+Now you can proceed to install your plugins one by one, until you find the one that’s causing the crash.
+
+What can I do about plugin issues?
+
+Plugins are created by third-party developers, so you’d need to get in touch with them for further support and assistance. But before you do, try checking to see if there’s an update available for the plugin that’s causing you issues. That can often solve things.",
+          "url": "https://www.sketch.com/support/troubleshooting/what-is-safe-mode-and-how-do-i-enable-it/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why is the Mac app having trouble saving files to Google Drive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you’re having issues saving files from the Mac app to a location on Google Drive, this might be due to security rules implemented by Apple on the macOS that prevent applications from working with files in certain locations.
+
+To fix this, you’ll need to grant the Mac app Full Disk Access under the Security &amp;amp; Privacy pane in System Preferences. Here’s how to do that:
+
+
+  From your menu bar, choose  &amp;gt; System Preferences &amp;gt; Security &amp;amp; Privacy, then select the Privacy tab.
+  To make changes here, click on the lock icon in the bottom-left corner of the window and enter your username and password (or one for an administrator on your machine) in the prompt that appears.
+  In the panel on the left, choose Full Disk Access, then click on the + button under the panel on the right.
+  Select Sketch from the list of applications that appears and choose Open, then tick the checkbox next to it.
+
+
+Following the steps above will allow Sketch to write files to any location on your Mac. But rest assured, we take your privacy and security seriously here and will not abuse this permission.
+
+You should now be able to save files to Google Drive without any trouble, but if you do have further issues, please get in touch.",
+          "url": "https://www.sketch.com/support/troubleshooting/full-disk-catalina/"
+        }
+      },{
+        "@type": "Question",
+        "name": "I can’t register Sketch but I’m connected to the internet",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Although Sketch doesn’t always require you to be connected to the internet, the Mac app does sometimes need to connect to a network, for example when you register your copy of the app, or when it needs to validate your license.
+
+If the Mac app tries to register/validate your license and can’t connect to our server you’ll probably see the following message:
+
+“Could not reach the server to validate your license. Please check your connection and try again.”
+
+To register the Mac app, the app needs to be able to connect to the following:
+
+
+
+
+  
+    
+      
+        Host
+        Port
+      
+    
+    
+      
+        api.prod.sketch.com
+        443 (https)
+      
+    
+  
+
+
+
+
+If you’re using a firewall, you will need to change your settings to allow traffic to this host. If you’re using a proxy server, you will need to add our domain to your allowlist, as we don’t allow re-signing of certificates.
+
+Note: The Mac app does not currently support all (authenticated) proxy setups.
+
+If you’re still unable to register after you’ve fixed these settings, we recommend disabling all plugins and restarting the Mac app. Some plugins launch a proxy when you open the app and this can sometimes affect our global network settings.
+
+If you’re struggling to register or validate the Mac app, we’re here to help. To allow us to better understand what issue you might be experiencing, it’s important that you send us the information as detailed below:
+
+Note: These issues are normally caused by local network issues so if you have an IT team / department, they can also analyze the following information to try and determine why you can’t connect to our API server.
+
+Console logs
+
+Console logs can help us identify exactly what’s happening when you try to register the Mac app. Follow these instructions to compile and send us the logs.
+
+
+  Launch the Console app (found in Applications &amp;gt; Utilities).
+  In the Search field in the Console’s toolbar, enter Sketch to filter for only Sketch related logs.
+  Launch the Mac app and try to register it with the license key in question.
+  Once the problem occurs again (in the case of a timeout this can take as long as 30 seconds), return to the Console.
+  Select any of the messages listed in the Console window, then press ⌘A to highlight all of the current logs.
+  Copy and paste the logs from the Console into a TextEdit file and save it.
+
+
+Terminal results
+
+There are a couple of Terminal commands that you can use to test your connection to our server and what problems there are that could be causing that connection to fail. Follow these instructions to compile and send us your Terminal results.
+
+This first Terminal command will tell you if you can connect to our api server, what certificate is used and if there is a proxy in between.
+
+
+  Launch the Terminal app (found in Applications &amp;gt; Utilities).
+  Press Command-N to open a new Terminal window.
+  Type curl -I -v https://api.prod.sketch.com (or copy and paste it from here) and hit enter.
+  Click anywhere in the Terminal window, then press ⌘A to highlight all of the text.
+  Copy and paste the text from the Terminal into a TextEdit file and save it.
+
+
+The next terminal command is a tool provided by Apple that we can use to test the connection using different set of ATS (App transport security) configurations.
+
+
+  Launch the Terminal.app (found in Applications &amp;gt; Utilities).
+  Press Command-N to open a new Terminal window.
+  Type nscurl --verbose --ats-diagnostics https://api.prod.sketch.com (or copy and paste it from here) and hit enter.
+  Click anywhere in the Terminal window, then press ⌘A to highlight all of the text.
+  Copy and paste the text from the Terminal into a TextEdit file and save it.
+
+
+Finally, fill out our support form and attach these three files—two with terminal results and one with your console logs—to your response. Once we have this information we can determine why you can’t connect to our server and try and solve your issue.
+
+Remember, once you’ve registered the Mac app you will be able to use the app while offline, but it does need to connect to a network from time to time, in order to update the local license file and ensure your license is still valid. This will require a valid network connection as outlined above.",
+          "url": "https://www.sketch.com/support/troubleshooting/sketch-restrictive-network/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Endpoints required for correct operation of the Mac app",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Under certain circumstances, the Mac app might not be able to communicate correctly with the server, preventing the application from receiving particularly important information. If this happens you will not be able to register or update your application, upload files to your Workspace, or make use of real-time collaboration, for example.
+
+The most likely scenario for this to occur is when working under a Corporate Network (via VPN, proxy, firewall, etc.). In order to resolve this, it’s important to check if traffic is allowed in both directions (inbound and outbound). Here’s a list of the domains that Sketch uses. Please allow these URLs to make sure Sketch can communicate correctly with our servers:
+
+capacitor.prod.sketch.com
+capacitor-incoming-prod.s3.amazonaws.com
+resources-live.sketch.cloud
+graphql.sketch.cloud 
+client.sketch.cloud 
+auth.sketch.cloud 
+resources-live.sketch.cloud 
+sketch-resources-incoming-live.s3-accelerate.amazonaws.com 
+api.sketchapp.com
+api.prod.sketch.com 
+download.sketch.com 
+download.sketchapp.com 
+events.sketch.cloud
+presence.prod.sketch.com
+metrics-collector.prod.sketch.com
+payments.prod.sketch.com
+
+
+If you do not know how to add these URLs to your allowlist, please liaise with the IT specialist in your organisation to perform these changes.",
+          "url": "https://www.sketch.com/support/troubleshooting/endpoints-required-for-correct-operation/"
+        }
+      },{
+        "@type": "Question",
+        "name": "How do I find the Console output to share with my bug report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Please launch the Console application (from the Utilities folder inside your Applications folder). It should open to All Messages, showing the log entries for everything that’s happened recently on your Mac. If you’ve previously narrowed the Console results, show the Log List and select All Messages before proceeding.
+
+Switch back to Sketch, and try to trigger the issue you were experiencing. This will print some output to the Console.
+
+Return to the Console and from the menu bar choose ’File › Save A Copy As…‘ and attach the file to your report to aid in our investigation.",
+          "url": "https://www.sketch.com/support/troubleshooting/find-console-output/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why can't I select some layers in the web Inspector?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In the web Inspector, when selecting something on your Artboard, it will pick the layer that is directly under your cursor. Depending on the structure of the layers in your document, you might find it difficult to select the specific layer you want.
+
+You can specifically indicate which layer you want it to select by control-clicking on it. When doing this, you will see a contextual menu with all the different layers available at that location in the document. Simply click on the layer you want, and you will be able to see its properties in the web Inspector.
+
+If you want to download assets they need to be set as “exportable” in the Mac app. They will be appear with a  icon next to their layer name. When one of these layers is selected, you’ll be able to see the downloadable assets in the web Inspector.",
+          "url": "https://www.sketch.com/support/troubleshooting/why-cant-i-select-some-layers-in-the-web-inspector/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why is my prototype not showing in the web app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Several factors can interfere with the proper function of your prototype in the web app, so let’s recap some of the main reasons that may be causing this.
+
+We would suggest firstly checking to make sure that you have set at least one of your Artboards as a Start Point (after this, the default Artboard Sketch Preview will display).
+
+You can do this by selecting one of your Artboards, and then clicking Prototyping → Use Artboard as Start Point in the menu bar.
+
+After that, you should go to the Prototype section in the web app see that you can play it from there without issue.
+
+Note also that you will be able to select to view your prototype with or without Hotspots enabled, by clicking in the three dots in the top right corner of the prototype:",
+          "url": "https://www.sketch.com/support/troubleshooting/prototype-not-showing/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why are my Smart Layout Symbols not working as they should?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your Smart Layout Symbol is not behaving as expected, it might be because you have manually resized it.
+
+Please note that manually resizing a Symbol that has Smart Layout properties will break its smart auto-resizing behavior.
+
+When you have a Symbol that has Smart Layout properties, you are indicating that you want the size of the Symbol to be determined solely by the content within it.
+
+Sketch does not fully support Symbols having both Smart Layout properties and allowing it to be manually resized.
+
+One easy way to determine if the Symbol has been manually resized is to select your Symbol’s instance in the Mac app and check in the Inspector if the Shrink Instance to fit content icon  is present.
+
+
+
+Clicking this icon will remove the manual resizing that has been applied to the Symbol and will correctly resize it based on any override content within it.
+
+We do have plans to continually improve the way the Mac app works with Smart Layout in future releases, but for now, you would need to decide if you want your Symbol to be a regular Symbol which you can manually resize, or a Smart Layout Symbol which resizes itself based on its content.
+
+Learn more about Resizing Symbols with Smart Layout",
+          "url": "https://www.sketch.com/support/troubleshooting/smart-layout-symbols-not-working/"
+        }
+      },{
+        "@type": "Question",
+        "name": "My SVG, EPS or PDF file is not displaying correctly",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We’re always working to improve our import and export support for SVG, EPS and PDF files. Some of these files use specific properties that we do not yet support though.
+
+If you have a file that’s not working as expected with the Mac app, we’d appreciate if you could share it with us. We’ll analyze what may be causing the incompatibility and fix it in a future release. Please use our customer support form to send us your files.",
+          "url": "https://www.sketch.com/support/troubleshooting/vector-import-export/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Does Sketch measure text layers in points or pixels?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sketch uses the macOS coordinates system, which is measured in points. So, when you work in Sketch, everything is measured in points — this includes text layers.
+
+A single point in Sketch translates to a single physical pixel on an @1x display. When you export layers, you can change the output scale to whatever you want. So if you export using an @2x scale — for high-resolution “retina” displays — a single point will be equal to two pixels. If you export using an @3x scale, a single point will equal three pixels, and so on.
+
+If you copy CSS attributes from the the Mac app or from the Inspector panel in the web app, these will be measured in px. CSS px measurements are not the same as physical pixels (as this article from W3C explains) but you can think of CSS pxmeasurements as the equivalent to points in Sketch.
+
+Points in Sketch are not the same as points (often abbreviated to pt) that are used as a unit of measurement for typography. The pt unit of measurement is a fixed size (1/72th of an inch), whereas the size of a physical pixel is based on the resolution of a display.",
+          "url": "https://www.sketch.com/support/troubleshooting/points-vs-pixels/"
+        }
+      },{
+        "@type": "Question",
+        "name": "My custom keyboard shortcuts are not working",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some menu titles in the Mac app might need to change from time to time. For instance, the former ‘Collapse Artboards and Groups’ now is titled ‘Collapse All Groups’, and ‘Text › Align Left’ is now ‘Text › Align › Left’
+
+Because of these changes, you may have to adjust your custom shortcuts in order to get them working again.
+
+In order to do this, you can search for the new menu option going to Help in the menu bar and searching for the option. If it has changed, go to System Preferences › Keyboard › Shortcuts › App Shortcuts and change the name of your custom shortcut accordingly.
+
+Keep in mind that you can target a specific menu item by using its hierarchy as the shortcut name (i.e: ‘Arrange-&amp;gt;Align-&amp;gt;Left’, instead of just ‘Left’). Please note the use of ‘-&amp;gt;’ with no spaces as a separator.
+
+See Apple’s docs for more info about keyboard shortcuts.",
+          "url": "https://www.sketch.com/support/troubleshooting/change-custom-shortcuts/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Do you support other file formats such as Figma, XD, Photoshop, Illustrator, etc?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The file formats used by other applications are closed and proprietary. This means only the developers of those applications know how to read these files properly. As such, we cannot provide proper support for these documents.
+
+However, you can always export files in these applications to other formats (SVG, EPS…) that Sketch can then import.",
+          "url": "https://www.sketch.com/support/troubleshooting/import-psd-ai/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why can I no longer sync my local documents online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As Sketch has evolved, and we’ve improved the way that we handle documents and uploads, we’ve replaced local document syncing to what used to be called Sketch Cloud, with incremental uploads to your Sketch Workspace. When you save a document to your Workspace, it’s available everywhere that you use Sketch, and you can always access the latest version — in the Mac app and the web app.
+
+The benefits of Workspaces include:
+
+
+  Real-time collaboration — Collaborate alongside other people in the Mac app, in real-time. You can join people in your own Workspace, or invite others from outside your Workspace.
+  Auto-saving built in — You no longer need to manually save your work — the Mac app automatically saves all your changes to your Workspace, so there’s no need to worry about losing work.
+  Incremental uploads — The Mac app continuously uploads your changes to the server, so there’s no need to re-process a large document from scratch each time you want to share a version of it.
+
+
+If you need to work on a Workspace document while you are offline, you can still do this by opening it via File &amp;gt; Open Recent. When you reconnect, the Mac app will sync all of your edits back to your Workspace.
+
+You can use starred updates to denote important updates to other Workspace members, specify which version of a document Workspace Guests will see (great for sharing work with clients), and select a specific version of a Shared Library to act as the primary source for everyone else to use.
+
+And for projects and documents that aren’t quite ready to share with the rest of the people in your Workspace, you can use the My Drafts folder. It’s completely private, making it the perfect place for work-in-progress ideas. And when you want to get some wider feedback, you can either keep the document in My Drafts and invite individuals to view it, or move it to a public Project in your Workspace and share the link with whoever you want.",
+          "url": "https://www.sketch.com/support/troubleshooting/sync-local-documents-online/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why am I seeing question marks in Apple's iOS UI Library?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you’ve recently installed or updated Apple’s iOS UI Library, you might notice some text layers with missing characters — denoted by a ⍰. These missing characters are related to the SF Symbols feature.
+
+To show the correct SF Symbols instead of missing characters, you’ll need to do the following:
+
+
+  Open the Font Book application on your Mac and completely uninstall all copies of Apple’s SF Pro font (don’t forget to empty the trash).
+  Head to Apple’s Design Resources and download the latest version of the SF Pro font (you might also want to download the SF Symbols application while you’re there).
+  Quit Sketch and restart your Mac.
+  Open any document using Apple’s iOS UI library in the Mac app and confirm there are no more missing character symbols.",
+          "url": "https://www.sketch.com/support/troubleshooting/sf-symbols-missing/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why is the Mac app in Chinese?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Mac app supports Simplified Chinese, based on your Language and Region Preferences. If it is unexpectedly appearing in Chinese, you can take the following steps to fix it.
+
+If your primary macOS language is not Chinese:
+
+
+  Go to  &amp;gt; System Preferences &amp;gt; Language &amp;amp; Region
+  Add English to your “Preferred languages”
+  After adding English to your “Preferred languages” drag it to a higher position than Chinese. Make sure English is between your Primary Language and Chinese.
+
+
+
+  
+    
+  
+  macOS Language &amp;amp; Region Preferences.
+
+
+You can find more information on Apple’s website.",
+          "url": "https://www.sketch.com/support/troubleshooting/chinese-localization/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why is the Mac app asking for permission to record my screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When using the Mac app, you may see a warning for any apps that capture or record your screen. The app needs permission to record your screen in order to sample colors when using the color picker and does not record your screen for any other purpose.
+
+You can change these settings by opening System Preferences on your Mac and navigating to Security &amp;amp; Privacy › Privacy › Screen Recording.",
+          "url": "https://www.sketch.com/support/troubleshooting/screen-recording-catalina/"
+        }
+      },{
+        "@type": "Question",
+        "name": "I’ve found a bug or have a feature request, how can I report it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you would like to send a bug or crash report, request features or give general feedback you can do so via our Customer Support form.
+
+Please provide as much info as possible — detailed reports make it easier to diagnose and solve any issues. If possible, please upload your document to a service like Dropbox or similar and provide a link to it in your message. Due to the nature of Sketch, most bugs are usually related to a specific element of your design in the Mac app and it’s helpful if we can inspect the document in order to provide a fix. Find out more about how to provide detailed bug reports and feedback.
+
+All the information you share with us is 100% confidential and will not be stored.
+
+You can also get to our support form directly from the Mac app by clicking on the Help item in the menu bar and selecting Contact Customer Support. Then click on Can’t find your answer? at the bottom of the page.",
+          "url": "https://www.sketch.com/support/troubleshooting/reporting-bugs/"
+        }
+      },{
+        "@type": "Question",
+        "name": "I have found an issue relating to a plugin. What should I do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We do our best to check plugins and work directly with plugin developers to prevent issues. But sometimes you may run into issues like crashes that could be caused by them.
+
+To work out if a plugin is causing issues, follow the instructions in our How do I launch the Mac app in Safe Mode? article.
+
+Plugins are created by third-party developers, so if you do come across an issue, you will need to get in touch with them for further support and assistance. Before you do, try checking to see if there’s an update available for the plugin in question. That can often solve things.",
+          "url": "https://www.sketch.com/support/troubleshooting/plugin-issues/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Providing feedback",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your feedback is really important and we appreciate you taking the time to get in touch. We’ll do our best to help resolve any issues you might have.
+
+To submit a report for a bug crash or an other issue, simply fill our Contact Customer Support form.
+
+If you have found a bug, crash, or have any problems with Sketch, then including a sample document or screen recording with your report will help us diagnose your issue and find a solution faster.
+
+We may also require additional information, such as console logs from you to help us with our investigation. Below are some quick tutorials and instructions on how to access files we often need.
+
+Note: Any information you share with us is 100% confidential and we’ll delete any files you share with us as soon as we’ve finished our investigations.
+
+Creating a screen recording
+
+If you are experiencing something that can be easily replicated, then a screen recording may help aid your description. If a picture can say a thousand words, then imagine how many a video can say!
+
+
+	
+		
+	
+
+
+⌘⇧5 on macOS Mojave
+
+If you’re running macOS 10.14 Mojave or later, you can quickly and easily take a screen recording by pressing ⌘⇧5. This will reveal controls that allow you to capture a video of your entire screen, a specific window, or a selected portion of the screen. Make sure to click on Options and then click Show Mouse Clicks, as this really helps us diagnose the issue. Additionally, if you’re comfortable doing so, you can also enable recording via your Mac’s microphone from the same options menu and talk through your issue as you make your screen recording.
+
+You can find more detailed instructions on Apple’s website.
+
+
+	
+		
+	
+
+
+QuickTime Player
+
+To create a simple recording, open your QuickTime Player app and choose File › New Screen Recording from the menu. Click the red record button, then follow the instructions on screen. To save, choose File › Export and select the quality. Make sure to click the little arrow beside the record button and then click Show Mouse Clicks, as this really helps us diagnose the issue. If you’re using macOS 10.15 Catalina or newer, you can click Options at the bottom of the screen and select Show Mouse Clicks, instead. Additionally, if you’re comfortable doing so, you can also enable recording via your Mac’s microphone from the same options menu and talk through your issue as you make your screen recording.
+
+Sending a crash log
+
+Whenever an application on macOS crashes, it’ll automatically create a .crash file containing details as to what may have caused the crash. In the rare event of the Mac app crashing, attaching a crash log when contacting support will help us find out what caused the crash, and how we can fix it. Here’s how you can get hold of that file:
+
+
+  In the Finder, go to your Applications folder, then Utilities and launch the app, Console.
+  Under the User Diagnostic Reports portion of the sidebar, locate the most recent crash.
+  When found, control-click it, and then select Reveal in Finder from the shortcut menu.
+  Copy, or drag out the selected file from the Finder window and attach it to your message to us.
+
+
+Collecting a spindump
+
+If the Mac app becomes slow or unresponsive, running something called a spindump will gather a report that contains all the information we’ll need to debug the problem. You can do this by:
+
+
+  Launching the Activity Monitor app. This can be found in Applications› Utilities folder.
+  In the list of process names, you should see Sketch. Select it, then in the toolbar click the … ellipsis button (cog button on macOS Catalina and earlier), and choose Run Spindump from the pop-up menu.
+  You may have to enter your computer’s password to continue, but a new window will appear that’ll log the output. This may take a little while.
+  Once done, click Save… in the top-right and send that file to our support team along with your message.
+
+
+Obtaining Console logs
+
+Depending on the nature of a reproducible bug or glitch, we may ask to see the content of your Console to see what information the Mac app is telling your computer. This information will help our team investigate the issue better. You can grab them by:
+
+
+  Launching the Console application from the Applications › Utilities folder in Finder.
+  Click the Clear Display” item in the toolbar. This will make it easier to find what we’re looking for.
+  Back in Sketch, try and trigger the issue (or let it happen).
+  When triggered, switch back to Console, and type sketch in the filter bar — you should see some messages — these are the ones we’re looking for.
+  Select them all, and in the menu, choose File › Save a Copy As… and send that document to us as part of your report.
+
+
+Gathering a system report
+
+We may request to see a summary of information about your Mac to resolve some specific issues. This information can be gathered via the System Information app.
+
+
+  Choose the Apple () menu item and hold down the Option key to reveal the System Information… item.
+  When the System Information app appears, choose File › Save.
+  Select a location where you want to save the file, and include it in your message to our support team.
+
+
+From this system report, we can gather hardware information, such as whether you’re using an iMac or MacBook, macOS version, information about your graphics card, etc. The System Information does not contain or reveal any personal data, or information that may be used to identify you.
+
+If you have any concerns relating to privacy or use of data, please read our EULA.
+
+Determining your browser details
+
+If you’re experiencing issues with the web app we might ask what browser you’re using. While answering “Safari”, or “Chrome” is correct, that’s only half the story. This handy link will detect the exact details of your browser, such as whether you have JavaScript enabled, or what version of Flash you have installed. Please copy the link at the top of the page and send it to us.
+
+Common requests
+
+In addition to the above tutorials on how to gather various files to include in your report, we’ve outlined the steps required to perform actions we often see requested.
+
+Re-installing the Mac app
+
+To do a clean re-install of the Mac app, it’s recommended that you use an uninstaller like AppCleaner (free) to ensure all files related to the Mac app are deleted.
+
+After you have completed uninstalling the Mac app, please re-download the latest version and enter your license key again if prompted. (If you do not have a note of your license key, you can retrieve it over on our License Admin page.
+
+Deleting the revisions folder
+
+In order to free up some disk space that may have been used by the Mac app and the system’s Auto Save feature, we suggest using OnyX (free) by Titanium Software. Using this app is safer than manually deleting the files, which is likely to cause a whole host of issues.
+
+To delete the Revisions folder with OnyX, please follow these steps:
+
+
+  Launch OnyX, enter your machine’s password and confirm the disk verification.
+  Click the Cleaning tab then select the Misc. pane.
+  Select the Automatically saved versions of the documents checkbox, and deselect the other checkboxes that are enabled by default.
+  Click the Execute button to clear the revisions folder.
+
+
+⚠️ Warning: these steps will not only delete Versions of Sketch files, but also documents created by any other apps that use Auto Save.
+
+To stop Sketch saving backups and versions to this location, you can deselect the Auto Save checkbox in the Mac app’s preferences, which can be found under the General tab.
+
+We do not recommended that you disable Auto Save so you don’t accidentally lose any work. However this will be sure to stop your disk space from bloating undesirably.",
+          "url": "https://www.sketch.com/support/troubleshooting/providing-feedback/"
+        }
+      },{
+        "@type": "Question",
+        "name": "I lost my phone and my recovery codes, how can I sign in? ",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No worries! Get in touch with our Customer Support team for help. Our Customer Support team will disable 2FA for you. To enable it again, log in with your email and password and follow the setup instructions.",
+          "url": "https://www.sketch.com/support/troubleshooting/lost-recovery-codes-sign-in/"
+        }
+      },{
+        "@type": "Question",
+        "name": "I‘m using a previous version to 82, can I still use 2FA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! You can still enable 2FA even if you are working on a previous version to 82. However, we won‘t show you the verification code window when you log in. Instead, you‘ll need to concatenate the 2FA code to your password.
+
+For example, let‘s imagine your Sketch Account password is graphic-design-is-my-passion and your verification code is 123456. When you add your details your password should look something like this: graphic-design-is-my-passion123456.",
+          "url": "https://www.sketch.com/support/troubleshooting/older-version-to-82-still-use-2fa/"
+        }
+      },{
+        "@type": "Question",
+        "name": "I can't find my 2FA recovery codes (but I'm logged in)",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can always generate new recovery codes in your Sketch Account page. We’ll automatically deactivate your old recovery codes.",
+          "url": "https://www.sketch.com/support/troubleshooting/i-cant-find-my-2fa-recovery-codes/"
+        }
+      },{
+        "@type": "Question",
+        "name": "I lost my phone and I have 2FA enabled, how can I access Sketch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Don’t worry, you can use your recovery codes in this case. Sign in with your email and password and use one of the recovery codes as your second factor. However, these codes can only be used once so we highly recommend you disable 2FA and re-configure it again once you are logged in.",
+          "url": "https://www.sketch.com/support/troubleshooting/lost-phone-2fa-enabled-access-sketch/"
+        }
+      }
+    ]
+  }
+</script>
+
+</main>
+
+
+  
+
+  <footer class="main-footer" id="footer" role="contentinfo"><div class="main-footer__footer pad-viewport">
+    <div class="wrapper"><section class="main-footer__nl">
+  <div class="main-footer__nl__text">
+    <h2 class="main-footer__nl__heading">Subscribe to our newsletter</h2>
+    <p class="main-footer__nl__blurb">A monthly digest of the latest Sketch news, articles, and resources.</p>
+  </div>
+  <form
+    action="https://api.hsforms.com/submissions/v3/integration/submit/7692458/73aef289-8f46-43b5-b859-dd68d024d89c"
+    data-controller="newsletter"
+    data-action="newsletter#process"
+    data-newsletter-remote="true"
+    class="main-footer__nl__form"
+    method="POST"
+  >
+    <div class="input-group main-footer__nl__form__input-group">
+      <!-- For screenreader purposes only -->
+      <label class="visuallyhidden" for="main-footer-nl-email">Email</label>
+      <input
+        type="email"
+        name="email"
+        required
+        autocomplete="email"
+        placeholder="Your email address"
+        aria-invalid="false"
+        aria-errormessage="main-footer-nl-error"
+        class="form-input form-input--in-group form-input--wide"
+        id="main-footer-nl-email"
+        data-newsletter-target="email"
+      />
+      <button
+        data-newsletter-target="button"
+        type="submit"
+        class="button button--primary button--in-group"
+        disabled="true"
+      >
+        Subscribe
+      </button>
+    </div>
+    <div class="form-option main-footer__nl__confirm" data-newsletter-target="gdprConfirm">
+      <input
+        class="form-checkbox"
+        type="checkbox"
+        name="gdpr"
+        id="main-footer-nl-gdpr"
+        data-action="change->newsletter#enable"
+      />
+      <label for="main-footer-nl-gdpr" class="form-option-label form-option-label--small"
+        >I agree to receive marketing emails from Sketch.</label
+      >
+    </div>
+  </form>
+</section>
+
+<nav class="main-footer__nav">
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Sketch
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-product"><li><a
+        class="main-footer__nav__item"
+        href="../../home/home.html"
+        
+      >Overview
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../design/design.html"
+        
+      >Design
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../collaborate/collaborate.html"
+        
+      >Collaborate
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../workspaces/workspaces.html"
+        
+      >Workspaces
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../pricing/pricing.html"
+        
+      >Pricing
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Apps
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-apps"><li><a
+        class="main-footer__nav__item"
+        href="../../apps/apps.html"
+        
+      >Apps
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../extensions/extensions.html"
+        
+      >Extensions
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../updates/updates.html"
+        
+      >Updates
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Support
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-resources"><li><a
+        class="main-footer__nav__item"
+        href="../../docs/docs.html"
+        
+      >Documentation
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../support.html"
+        
+      >Get Help
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../status_sketch_default.html"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      >Service Status
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-footer__nav__item__action main-footer__nav__item__action--icon">
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.252 10.25l-.002-5.5h-5.5m-2 7.5l7-7"></path>
+</svg>
+
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../license/license.html"
+        
+      >Manage License
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Connect
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-connect"><li><a
+        class="main-footer__nav__item"
+        href="../../blog/blog.html"
+        
+      >Blog
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../community/community.html"
+        
+      >Events & Meetups
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../labs/labs.html"
+        
+      >Research Labs
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../developer_sketch_default.html"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      >Developer Platform
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Follow Us
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-social"><li><a
+        class="main-footer__nav__item"
+        href="https://twitter.com/sketch"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      ><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 20 20" width="20" fill="#000" class="main-footer__nav__item__icon"><path d="m19.960835 3.9053673c-.7374693.31906496-1.5249365.53642283-2.3540686.63566925.8449648-.50115343 1.4949377-1.29102373 1.8024249-2.23345466-.792467.45522121-1.6707637.78658943-2.6057248.97113857-.7466355-.78658943-1.8107579-1.27872046-2.9923753-1.27872046-2.2640723 0-4.09982917 1.8069411-4.09982917 4.03301379 0 .31988517.03749844.62746706.10582892.92192546-3.40819132-.15830215-6.42889879-1.76921105-8.45048123-4.20443943-.3558185.59219767-.55497687 1.2803609-.55497687 2.0300405 0 1.40257343.72496979 2.63536166 1.82325736 3.3596145-.67247198-.02132568-1.30494562-.20341416-1.85658931-.50525453v.05003332c0 1.95622085 1.41077456 3.58763519 3.28819633 3.95919409-.34415233.0910443-.70747052.1402574-1.079955.1402574-.26165577 0-.51247865-.0246066-.76330153-.0705388.52581142 1.6018865 2.03741511 2.7698775 3.83650681 2.8026862-1.39994167 1.0818681-3.17403441 1.7265597-5.08478813 1.7265597-.32498646 0-.64913962-.018865-.97495938-.0549546 1.82409066 1.1433844 3.97316778 1.8118624 6.29723762 1.8118624 7.54468568 0 11.66534728-6.148357 11.66534728-11.47157431 0-.17142564 0-.34449172-.0124995-.51673758.8008-.56513046 1.4999375-1.27954068 2.0499146-2.08991644z" fill-rule="evenodd"></path></svg>
+
+Twitter
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="https://www.instagram.com/sketchformac/"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      ><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 20 20" width="20" fill="#000" class="main-footer__nav__item__icon"><path d="m10 1c-2.445 0-2.75025.01125-3.71025.054-.9585.045-1.611.19575-2.18475.4185-.59175.2295-1.09425.53775-1.5945 1.038s-.80925 1.002-1.038 1.5945c-.22275.57375-.37425 1.22625-.4185 2.18475-.045.96-.054 1.26525-.054 3.71025s.01125 2.75025.054 3.71025c.045.95775.19575 1.611.4185 2.18475.2295.591.53775 1.09425 1.038 1.5945.50025.4995 1.002.80925 1.5945 1.038.5745.222 1.227.37425 2.18475.4185.96.045 1.26525.054 3.71025.054s2.75025-.01125 3.71025-.054c.95775-.045 1.611-.1965 2.18475-.4185.591-.2295 1.09425-.5385 1.5945-1.038.4995-.50025.80925-1.00125 1.038-1.5945.222-.57375.37425-1.227.4185-2.18475.045-.96.054-1.26525.054-3.71025s-.01125-2.75025-.054-3.71025c-.045-.95775-.1965-1.61175-.4185-2.18475-.2295-.59175-.5385-1.09425-1.038-1.5945-.50025-.50025-1.00125-.80925-1.5945-1.038-.57375-.22275-1.227-.37425-2.18475-.4185-.96-.045-1.26525-.054-3.71025-.054zm3.6375 1.67325c.8775.04125 1.35375.18675 1.67025.31125.4215.16275.72.35775 1.0365.672.31425.315.50925.61425.672 1.03575.123.3165.27.79275.30975 1.67025.04275.9495.0525 1.2345.0525 3.6375s-.01125 2.68875-.0555 3.6375c-.04575.8775-.192 1.35375-.31575 1.67025-.168.4215-.35925.72-.67425 1.0365-.31425.31425-.618.50925-1.035.672-.315.123-.79875.27-1.67625.30975-.9555.04275-1.23675.0525-3.64425.0525-2.40825 0-2.6895-.01125-3.64425-.0555-.87825-.04575-1.362-.192-1.677-.31575-.42675-.168-.72-.35925-1.03425-.67425-.31575-.31425-.5175-.618-.675-1.035-.12375-.315-.26925-.79875-.315-1.67625-.03375-.945-.04575-1.23675-.04575-3.633 0-2.397.012-2.6895.04575-3.64575.04575-.8775.19125-1.3605.315-1.6755.1575-.4275.35925-.72.675-1.03575.31425-.31425.6075-.51675 1.03425-.6735.315-.1245.78825-.27075 1.66575-.31575.95625-.03375 1.2375-.045 3.64425-.045l.03375.0225c2.40225 0 2.68875.012 3.6375.05325zm-3.6375 2.70525c-2.55375 0-4.6215 2.07-4.6215 4.6215 0 2.55375 2.07 4.6215 4.6215 4.6215 2.55375 0 4.6215-2.07 4.6215-4.6215 0-2.55375-2.07-4.6215-4.6215-4.6215zm0 7.6215c-1.6575 0-3-1.3425-3-3s1.3425-3 3-3 3 1.3425 3 3-1.3425 3-3 3zm5.8845-7.80375c0 .59625-.4845 1.08-1.08 1.08-.59625 0-1.08-.4845-1.08-1.08s.4845-1.07925087 1.08-1.07925087c.59475-.00074913 1.08.48375087 1.08 1.07925087z"></path></svg>
+
+Instagram
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="https://dribbble.com/sketch"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      ><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 20 20" width="20" fill="#000" class="main-footer__nav__item__icon"><path d="m10 19c-4.96125 0-9-4.03875-9-9s4.03875-9 9-9 9 4.03875 9 9-4.03875 9-9 9zm7.59-7.7685c-.2625-.0825-2.3775-.71475-4.788-.3285 1.005 2.763 1.41525 5.013 1.494 5.481 1.725-1.16625 2.952-3.015 3.29625-5.1525zm-4.58625 5.856c-.11475-.675-.5625-3.024-1.6425-5.8275l-.0495.015c-4.3425 1.51125-5.895 4.51875-6.03 4.8 1.2975 1.0185 2.94 1.6245 4.7175 1.6245 1.065 0 2.0775-.2175 3-.6105zm-8.715-1.935c.174-.3 2.28375-3.79125 6.249-5.07375.10125-.03375.2025-.063.30375-.09-.195-.43875-.405-.87525-.624-1.305-3.84 1.1475-7.563 1.09875-7.9005 1.09125l-.003.234c0 1.97475.7485 3.77775 1.9755 5.14125zm-1.815-6.71625c.345.006 3.51225.0195 7.10775-.936-1.2735-2.2635-2.6475-4.1685-2.85-4.446-2.151 1.0125-3.7575 2.9925-4.257 5.3775zm5.72625-5.89725c.2115.285 1.60875 2.1855 2.8665 4.5 2.73375-1.02375 3.8925-2.58 4.02975-2.7765-1.3575-1.2075-3.1425-1.9395-5.09625-1.9395-.61875 0-1.2225.075-1.8.21375zm7.75125 2.61225c-.1635.2175-1.45125 1.86975-4.293 3.03.18.3675.3525.73875.51 1.1145.06.135.1125.27.165.3975 2.5575-.3225 5.1.195 5.355.2475-.015-1.815-.66-3.48-1.7325-4.785z"></path></svg>
+
+Dribbble
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Company
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-company"><li><a
+        class="main-footer__nav__item"
+        href="../../about-us/about-us.html"
+        
+      >About Us
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../careers/careers.html"
+        
+      >Careers
+<span class="pill pill--secondary main-footer__nav__item__badge">
+  22
+</span>
+
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../legal/legal.html"
+        
+      >Terms & Policies
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../contact/contact.html"
+        
+      >Contact Us
+</a></li></ul>
+</div>
+
+        
+      </nav>
+
+      <p class="main-footer__notice">&copy;
+        2022
+        Sketch B.V.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+  
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sketch",
+      "legalName" : "Sketch B.V.",
+      "url": "https://www.sketch.com",
+      "logo": "https://cdn.sketch.com/logo/horizontal_onetrust_trans.png",
+      "foundingDate": "2010",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Emanuel Sá"
+        },
+        {
+          "@type": "Person",
+          "name": "Pieter Omvlee"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "support@sketch.com"
+      },
+      "sameAs": [
+        "https://twitter.com/sketch",
+        "https://www.instagram.com/sketchformac/",
+        "https://dribbble.com/sketch",
+        "https://www.linkedin.com/company/sketchbv"
+      ]
+    }
+  </script>
+</body>
+
+</html>

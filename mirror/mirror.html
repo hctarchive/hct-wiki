@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="no-js"
+  data-controller="scrollable "
+  data-action="click->scrollable#navigate DOMContentLoaded@window->scrollable#goToHash hashchange@window->scrollable#goToHash">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  
+  <!-- Title -->
+<title>Mirror · Sketch</title>
+<meta property="og:title" content="Mirror" />
+<meta name="twitter:title" content="Mirror" />
+
+<!-- Description -->
+
+<!-- Images -->
+<meta property="og:image" content="https://www.sketch.com/images/metadata/preview-square.jpg" />
+<meta name="twitter:card" content="summary" />
+
+<!-- Canonical URLs -->
+<link rel="canonical" href="mirror.html" />
+<meta property="og:url" content="https://www.sketch.com/support/mirror/" />
+
+<!-- Non page-specific metadata -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Sketch" />
+<meta name="twitter:site" content="@sketch" />
+<link rel="alternate" type="application/atom+xml" title="RSS Feed for the Sketch Blog" href="../../blog/feed.xml" />
+
+<!-- Icons -->
+<link rel="icon" type="image/svg+xml" href="../../images/metadata/icon-16.svg" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../images/metadata/icon-16_2.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../images/metadata/icon-32_2.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="../../images/metadata/icon-96_2.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="152x152" href="../../images/metadata/icon-152_2.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="167x167" href="../../images/metadata/icon-167_2.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="180x180" href="../../images/metadata/icon-180_2.png" />
+
+
+  
+
+<link href="../../css/styles.legacy.e46be97d16.css" rel="stylesheet preload" as="style" />
+
+
+
+
+
+<script>
+  window.SENTRY_RELEASE_NAME = 'production_20220207-1519_jbdPi2iR3_EA'
+</script>
+<script defer src="../../js/sentry.1b5bfe40b4ab52a7b29f_2.js"></script>
+
+
+
+<script defer src="../../js/script.61fdb5d9fafb182d634d_2.js"></script>
+
+
+
+<script src="../../js/algoliasearch.min.js"></script>
+
+<script src="../../js/autocomplete.min.js"></script>
+
+
+
+  <script defer src="../../js/google-analytics.dedf771a217961ac690c_2.js"></script>
+
+<script defer src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+  
+
+</head>
+<body class="bg-hero-default-top-mono ">
+  
+
+  
+
+<a href="mirror.html#content" class="main-nav-skip">
+    Skip Navigation
+  </a>
+
+<header
+  class="main-nav"
+  data-controller="main-nav"
+  data-action="resize@window->main-nav#resized keydown@document->main-nav#keyPressed storage@window->main-nav#checkLoginState"
+  data-scrollable-target="sticky"
+  >
+  <nav class="main-nav__inner"><div class="main-nav__bar">
+      <div class="main-nav__controls" data-main-nav-target="navToggle">
+        <button
+          data-action="main-nav#toggleNav"
+          aria-expanded="false"
+          class="main-nav__toggle"
+          id="main-nav-toggle"
+          title="Toggle Menu"
+          aria-controls="main-nav-menu">
+          <!-- CSS Icon -->
+          <span class="main-nav__toggle__icon">
+            <span class="main-nav__toggle__icon__line main-nav__toggle__icon__line--top"></span>
+            <span class="main-nav__toggle__icon__line main-nav__toggle__icon__line--bottom"></span>
+          </span>
+          <span class="visuallyhidden">Menu</span>
+        </button>
+      </div>
+
+      <div class="main-nav__logo">
+        <a class="main-nav__logo__link" href="../../home/home.html" title="Go to Homepage">
+          <span class="main-nav__logo__shape"></span>
+          <span class="main-nav__logo__name">Sketch</span>
+        </a>
+      </div>
+
+      <div class="main-nav__persistent">
+        <div class="main-nav__persistent__profile is-hidden" data-main-nav-target="authProfile"></div>
+        <ul class="main-nav__persistent__actions is-hidden" data-main-nav-target="authActions">
+            <li class="main-nav__item
+              ">
+              <a
+                href="../../signin/signin.html"
+                class="main-nav__link main-nav__link--action"
+                data-event-type="sign-in" data-event-label="Header"
+
+                >Sign In</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div><div class="main-nav__menu" id="main-nav-menu" id="main-nav-menu" aria-labelledby="main-nav-toggle"><ul class="main-nav__menu__pages"><li class="main-nav__item">
+              <a
+                href="../../design/design.html"
+                class="main-nav__link"
+                
+                >Design</a>
+            </li><li class="main-nav__item">
+              <a
+                href="../../collaborate/collaborate.html"
+                class="main-nav__link"
+                
+                >Collaborate</a>
+            </li><li class="main-nav__item">
+              <a
+                href="../../apps/apps.html"
+                class="main-nav__link"
+                
+                >Apps</a>
+            </li><li
+              class="main-nav__item main-nav__subnav"
+              data-main-nav-target="subnav"
+            >
+              <button
+                class="main-nav__link main-nav__subnav__toggle"
+                data-action="main-nav#toggleSubnav"
+              >
+                Resources
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__link__icon">
+  <path stroke-width="1.5" d="M2.75 6L8 11.25 13.25 6" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+              </button>
+              <div class="main-nav__subnav__menu-wrapper">
+                <div class="main-nav__subnav__menu">
+                  <ul class="main-nav__subnav__items"><li class="main-nav__subnav__item">
+                        <div class="main-nav__subnav__header">
+                          
+                          <a href="../support.html" class="main-nav__subnav__header__icon-link" tabindex="-1">
+                            <span class="main-nav__subnav__header__icon main-nav__subnav__header__icon--help"></span>
+                          </a>
+                          
+                          <dl class="main-nav__subnav__header__text">
+                            <dt class="main-nav__subnav__header__label">
+                              <a href="../support.html" class="main-nav__subnav__link">
+                                Get Help
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__subnav__link__icon">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="6.25 3.75 10.5 8 6.25 12.25"></polyline>
+</svg>
+
+                              </a>
+                            </dt>
+                            <dd class="main-nav__subnav__header__description">Read our <a class="main-nav__subnav__header__description__link" href="../support.html">documentation and FAQs</a>, or <a class="main-nav__subnav__header__description__link" href="../contact/contact.html">get in touch</a>.</dd>
+                          </dl>
+                        </div>
+                        
+                      </li><li class="main-nav__subnav__item">
+                        <div class="main-nav__subnav__header">
+                          
+                          <a href="../../extensions/extensions.html" class="main-nav__subnav__header__icon-link" tabindex="-1">
+                            <span class="main-nav__subnav__header__icon main-nav__subnav__header__icon--extensions"></span>
+                          </a>
+                          
+                          <dl class="main-nav__subnav__header__text">
+                            <dt class="main-nav__subnav__header__label">
+                              <a href="../../extensions/extensions.html" class="main-nav__subnav__link">
+                                Extensions
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__subnav__link__icon">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="6.25 3.75 10.5 8 6.25 12.25"></polyline>
+</svg>
+
+                              </a>
+                            </dt>
+                            <dd class="main-nav__subnav__header__description">Do even more with <a class="main-nav__subnav__header__description__link" href="../../extensions/assistants/assistants.html">Assistants</a>, <a class="main-nav__subnav__header__description__link" href="../../extensions/plugins/plugins.html">plugins</a> and <a class="main-nav__subnav__header__description__link" href="../../extensions/integrations/integrations.html">integrations</a>.</dd>
+                          </dl>
+                        </div>
+                        
+                      </li><li class="main-nav__subnav__item">
+                        <div class="main-nav__subnav__header">
+                          
+                          <a href="../../community/community.html" class="main-nav__subnav__header__icon-link" tabindex="-1">
+                            <span class="main-nav__subnav__header__icon main-nav__subnav__header__icon--events"></span>
+                          </a>
+                          
+                          <dl class="main-nav__subnav__header__text">
+                            <dt class="main-nav__subnav__header__label">
+                              <a href="../../community/community.html" class="main-nav__subnav__link">
+                                Events & Meetups
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__subnav__link__icon">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="6.25 3.75 10.5 8 6.25 12.25"></polyline>
+</svg>
+
+                              </a>
+                            </dt>
+                            <dd class="main-nav__subnav__header__description">Discover and join your local Sketch community.</dd>
+                          </dl>
+                        </div>
+                        
+                          
+
+
+
+
+
+
+
+  
+    <div class="main-nav__subnav__placeholder">
+      <p>There are no upcoming events.</p>
+      <p>Want to host your own event? <a class="main-nav__subnav__placeholder__link" href="mailto:community@sketch.com">Get in touch</a>.</p>
+    </div>
+  
+
+
+
+                        
+                      </li><li class="main-nav__subnav__item">
+                        <div class="main-nav__subnav__header">
+                          
+                          <a href="../../blog/blog.html" class="main-nav__subnav__header__icon-link" tabindex="-1">
+                            <span class="main-nav__subnav__header__icon main-nav__subnav__header__icon--blog"></span>
+                          </a>
+                          
+                          <dl class="main-nav__subnav__header__text">
+                            <dt class="main-nav__subnav__header__label">
+                              <a href="../../blog/blog.html" class="main-nav__subnav__link">
+                                Blog
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-nav__subnav__link__icon">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="6.25 3.75 10.5 8 6.25 12.25"></polyline>
+</svg>
+
+                              </a>
+                            </dt>
+                            <dd class="main-nav__subnav__header__description">Get updates, articles and insights from the team.</dd>
+                          </dl>
+                        </div>
+                        
+                          
+  <ol class="main-nav__subnav__sublist main-nav__subnav__sublist--blog">
+      <li class="main-nav__subnav__subitem">
+        <time
+          data-controller="relative-date"
+          data-relative-date-date-value="2022-02-07"
+          
+          class="main-nav__subnav__time "
+          datetime="2022-02-07"
+          title="2022-02-07"
+        >Feb  7</time>
+        <a href="../../blog/2022/02/07/editing-symbols/editing-symbols.html" class="main-nav__subnav__sublink" >How to edit Symbols and set resizing options</a>
+      </li>
+      <li class="main-nav__subnav__subitem">
+        <time
+          data-controller="relative-date"
+          data-relative-date-date-value="2022-02-03"
+          
+          class="main-nav__subnav__time "
+          datetime="2022-02-03"
+          title="2022-02-03"
+        >Feb  3</time>
+        <a href="../../blog/2022/02/03/github-actions-work-with-sketch-documents/github-actions-work-with-sketch-documents.html" class="main-nav__subnav__sublink" >Open format: using GitHub Actions to work with Sketch documents</a>
+      </li>
+      <li class="main-nav__subnav__subitem">
+        <time
+          data-controller="relative-date"
+          data-relative-date-date-value="2022-01-31"
+          
+          class="main-nav__subnav__time "
+          datetime="2022-01-31"
+          title="2022-01-31"
+        >Jan 31</time>
+        <a href="../../blog/2022/01/31/create-symbols-sketch/create-symbols-sketch.html" class="main-nav__subnav__sublink" >How to create Symbols with Sketch</a>
+      </li></ol>
+
+
+
+
+                        
+                      </li></ul>
+                </div>
+              </div>
+            </li><li class="main-nav__item">
+              <a
+                href="../../pricing/pricing.html"
+                class="main-nav__link"
+                
+                >Pricing</a>
+            </li></ul><div class="main-nav__menu__auth">
+        <div class="main-nav__menu__auth__profile is-hidden" data-main-nav-target="authProfile"></div>
+        <ul class="main-nav__menu__auth__actions is-hidden" data-main-nav-target="authActions">
+          
+          <li class="main-nav__item
+            
+            main-nav__item--persistent
+          ">
+            <a
+              href="../../signin/signin.html"
+              class="
+              main-nav__link main-nav__link--action"
+              data-event-type="sign-in" data-event-label="Header"
+
+              >Sign In</a>
+          </li>
+          
+          <li class="main-nav__item
+            main-nav__item--cta
+            
+          ">
+            <a
+              href="../../signup/signup.html"
+              class="
+              button button--primary button--compact"
+              data-event-type="sign-up" data-event-label="Header"
+
+              >Sign Up for Free</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+
+  
+
+  <main id="content">
+  
+
+
+
+<section
+  class="secondary-nav pad-viewport"
+  data-scrollable-target="sticky"
+  data-controller="search-input-container">
+  <!-- prettier-ignore -->
+  <div class="wrapper secondary-nav__content"><div class="secondary-nav__nav-items">
+        
+        <a class="secondary-nav__nav-item" href="../support.html">Get Help</a>
+        
+      </div>
+      
+
+
+
+
+<div
+  class="algolia-search secondary-nav__search"
+  data-controller="search"
+  data-action="resize@window->search#resize"
+  data-search-filters-value="NOT search_categories:Blog"
+  data-search-show-recommendations-value="true"
+  data-search-recommendations-heading-value="Frequently Asked Questions"
+  data-search-index-name-value="knowledge_base"
+  data-search-show-headings-value="true"
+  data-search-limit-results-value="5"
+  
+  data-search-dropdown-position-value="absolute"
+  data-search-keep-results-open-value="false"
+>
+  <input
+    type="search"
+    
+    
+    
+    
+    data-search-target="input"
+    data-action="focus->search#showOverlay blur->search#hideOverlay keydown->search#keyPressed"
+    autocomplete="off"
+    class="form-input form-input--search form-input--compact secondary-nav__search__input"
+    placeholder="Search FAQs and Documentation"
+  />
+</div>
+
+    
+  </div>
+</section>
+
+<section class="pane pad-viewport support-subpage">
+  <div class="wrapper support-subpage__wrapper">
+    <div class="support-subpage__aside">
+      <div class="sidebar-nav js-toggleable">
+        <h3 class="sidebar-nav__heading">FAQs</h3>
+        <button class="button button--no-transforms button--wide button--no-shadow button--label-left sidebar-nav__dropdown-label js-toggleable-toggle"><span>Mirror</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" aria-hidden="true" focusable="false">
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" points="3.75 6 8 10.25 12.249 6.001"></polyline>
+</svg>
+</button>
+        <ul class="sidebar-nav__nav-items">
+          
+
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../general/general.html">General questions</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../subscriptions-and-workspaces/subscriptions-and-workspaces.html">Subscriptions and Workspaces</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../troubleshooting/troubleshooting.html">Troubleshooting</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../real-time-collaboration/real-time-collaboration.html">Real-time Collaboration</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item ">
+            <a href="../business-plan/business-plan.html">Business Plan</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          <li class="sidebar-nav__nav-item is-active">
+            <a href="mirror.html">Mirror</a>
+          </li>
+          
+          
+          
+          
+          
+
+          
+          
+        </ul>
+      </div>
+    </div>
+    <div class="support-subpage__content-wrapper">
+      <div class="support-subpage__content">
+        <h1 class="support-subpage__content__title">Mirror</h1>
+
+        
+
+        <ul class="support-subpage__articles">
+          
+          
+          
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/mirror/cant-connect-mirror/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why can’t I connect Mirror to the Mac app?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/mirror/ios-firewall/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">How can I make sure my firewall allows Mirror traffic?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/mirror/artboards-not-visible/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why aren't my Artboards visible in Mirror when connected via USB?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/mirror/cant-connect-mirror-via-wifi/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Why can't I connect to Mirror via Wi-Fi?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/mirror/cant-connect-mirror-no-solution/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">I can’t connect to Mirror via Wi-Fi and I’ve tried everything else</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/mirror/change-ios-app-connection-port/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Can I change the connection port for Mirror?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+<li class="support-subpage__article">
+            <a href="https://www.sketch.com/support/mirror/ios-android/" class="support-subpage__article__link">
+              <span class="support-subpage__article__title">Is there an app for Android?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000" class="support-subpage__article__chevron">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 5 5 5-5 5"></path>
+</svg>
+
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="pane pad-viewport pane--has-border-top support__contact-us support-subpage__contact-us">
+    <div class="wrapper text-center">
+        <h2 class="pane__heading__title">Can’t find your answer?</h2>
+        <p class="lead pane__heading__lead">Contact us and we’ll get back to you as soon as we can.</p>
+        <div class="pane__heading__actions">
+            
+                <a href="../contact/contact.html" data-event-type="internal" data-event-label="Contact us" class="button button--primary pane__heading__action">Contact us</a>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="pane pad-viewport support__features support-subpage__features pane--no-padding-bottom ">
+  <div class="wrapper">
+    <div class="row center-h">
+
+      
+        
+
+        <div class="col support__feature">
+          <div class="support__feature__card">
+            
+
+
+
+<img
+  
+  class="support__feature__icon"
+  
+  src="../../images/icons/universal/color/64x64/book.sketch@2x.png"
+  srcset="
+      /images/icons/universal/color/64x64/book.sketch.png    1x,
+      /images/icons/universal/color/64x64/book.sketch@2x.png 2x"
+  alt="Documentation"
+  width="64"style="left: -7px;top: -2px;"/>
+
+
+            <div class="support__feature__text">
+              <h3 class="support__feature__title">Documentation</h3>
+              <p class="support__feature__lead">Learn more about how to use the powerful features that Sketch gives you in our documentation.</p>
+              <div class="support__feature__actions">
+              
+                <a class="support__feature__action" data-event-type="internal" data-event-label="Support: Get started" href="../../docs/docs.html">Get started</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+
+        <div class="col support__feature">
+          <div class="support__feature__card">
+            
+
+
+
+<img
+  
+  class="support__feature__icon"
+  
+  src="../../images/icons/universal/color/64x64/workspace@2x.png"
+  srcset="
+      /images/icons/universal/color/64x64/workspace.png    1x,
+      /images/icons/universal/color/64x64/workspace@2x.png 2x"
+  alt="Manage your Workspace"
+  width="64"style="left: -7px;"/>
+
+
+            <div class="support__feature__text">
+              <h3 class="support__feature__title">Manage your Workspace</h3>
+              <p class="support__feature__lead">View your Workspace details, manage your members and more in your Workspace settings.</p>
+              <div class="support__feature__actions">
+              
+                <a class="support__feature__action" data-event-type="internal" data-event-label="Support: Open your Workspace" href="../../c.htm">Open your Workspace</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+
+        <div class="col support__feature">
+          <div class="support__feature__card">
+            
+
+
+
+<img
+  
+  class="support__feature__icon"
+  
+  src="../../images/icons/universal/color/64x64/plan.standard@2x.png"
+  srcset="
+      /images/icons/universal/color/64x64/plan.standard.png    1x,
+      /images/icons/universal/color/64x64/plan.standard@2x.png 2x"
+  alt="Subscriptions"
+  width="64"style="left: -5px;"/>
+
+
+            <div class="support__feature__text">
+              <h3 class="support__feature__title">Subscriptions</h3>
+              <p class="support__feature__lead">Subscriptions are the primary way to use Sketch and we've made switching easy.</p>
+              <div class="support__feature__actions">
+              
+                <a class="support__feature__action" data-event-type="internal" data-event-label="Support: Switch to a subscription" href="../switch-to-subscription/switch-to-subscription.html">Switch to a subscription</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+
+        <div class="col support__feature">
+          <div class="support__feature__card">
+            
+
+
+
+<img
+  
+  class="support__feature__icon"
+  
+  src="../../images/icons/universal/color/64x64/sketch.retail.box@2x.png"
+  srcset="
+      /images/icons/universal/color/64x64/sketch.retail.box.png    1x,
+      /images/icons/universal/color/64x64/sketch.retail.box@2x.png 2x"
+  alt="Legacy licenses"
+  width="64"style="left: -3px;"/>
+
+
+            <div class="support__feature__text">
+              <h3 class="support__feature__title">Legacy licenses</h3>
+              <p class="support__feature__lead">Manage, renew or recover legacy Mac-only (SK3) license keys.</p>
+              <div class="support__feature__actions">
+              
+                <a class="support__feature__action" data-event-type="internal" data-event-label="Support: Manage seats, renew or access invoices" href="../../license/license.html">Manage seats, renew or access invoices</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+    </div>
+  </div>
+</section>
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why can’t I connect Mirror to the Mac app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mirror relies on your devices to be connected to the same network. If that’s not the case, you’ll see an error.
+
+If you’re having issues with your connection, here are a few things to check:
+
+
+  Are both devices connected to the same Wi-Fi network?
+  Are you running the latest versions of the Mac app and Mirror?
+  Are the Wi-Fi security settings of your router blocking this kind of communication?
+  Have you tried connecting through USB? If not, read this article to find out more.
+
+
+There are also some more advanced settings that may be causing issues. If you’re in an office environment, you may need to ask your network administrator to check the following:
+
+
+  Is Bonjour (sometimes called MDNS or Multi Cast) enabled on both your router and Mac?
+  Is UPnP enabled on your router?
+  Is TCP Port 58005 allowing a connection between your iOS device and Mac?
+  Is your Mac blocking or disabling your Websocket connection? Mirror needs this to work.
+
+
+If you still can’t connect, please get in touch with our Customer Support team, and we’ll help you get Mirror up and running.",
+          "url": "https://www.sketch.com/support/mirror/cant-connect-mirror/"
+        }
+      },{
+        "@type": "Question",
+        "name": "How can I make sure my firewall allows Mirror traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you’re using a corporate or campus network, those are usually fire-walled, and the required traffic for Mirror is sometimes blocked by default. You may have to ask your network admin to add a rule to allow _sketchmirror._tcp.local traffic in the network.",
+          "url": "https://www.sketch.com/support/mirror/ios-firewall/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why aren't my Artboards visible in Mirror when connected via USB?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you’re having trouble connecting to Mirror via USB, here are some steps you should take:
+
+Make sure you’re running the most recent version of Mirror on your iOS device. If you’re not up to date please update the app to the latest version.
+
+If your Artboards are still not visible in Mirror or you’re already using the latest version of the app you may need to delete the app from your iOS device and install it again.
+
+If you’re still having trouble we advise that you reboot your device. To do this you can follow these instructions on the Apple Support website. This action won’t delete any information or apps on your device.",
+          "url": "https://www.sketch.com/support/mirror/artboards-not-visible/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Why can't I connect to Mirror via Wi-Fi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you can’t connect to Mirror over your Wi-Fi or network connection, here are some steps you should take:
+
+First, make sure that it’s not a local network issue. To do so you can reboot your network devices (routers and/or APs) as well as your iOS and MacOS devices.
+
+If this doesn’t fix the issue, make sure you are running the last versions of iOS, macOS, the Mac app and Mirror.
+
+If, after updating your software and devices, you’re still seeing the same issue, we recommend checking that your network/router allows the required network traffic for Mirror to function.",
+          "url": "https://www.sketch.com/support/mirror/cant-connect-mirror-via-wifi/"
+        }
+      },{
+        "@type": "Question",
+        "name": "I can’t connect to Mirror via Wi-Fi and I’ve tried everything else",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you’re still having trouble connecting to the Mirror over Wi-Fi, there is a last resort. In some cases unexplained behaviour in the Mac app can be solved by deleting your plist file.
+
+In order to ensure the plist file is removed successfully we recommend that you perform a completely new installation of the Mac app. Follow these instructions to do so.
+
+First make sure you completely uninstall the Mac app from your Mac. We recommend using an app like App Cleaner for Mac, which is free, and will ensure all preference files related to Sketch are deleted.
+
+Warning: this process involves removing all of your plugins and configurations.
+
+After you proceed with cleaning your Mac, download your latest version of Sketch from our updates page.
+
+When the installation is complete, please insert your Mac-only license key if requested. If you don’t see the prompt, you can register Sketch in Sketch &amp;gt; Preferences &amp;gt; Account.",
+          "url": "https://www.sketch.com/support/mirror/cant-connect-mirror-no-solution/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I change the connection port for Mirror?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By default Mirror connects to a random port each time you open it but you can change this to a fixed port with the following Terminal command.
+
+To set the connection port to port 8080 type the following in Terminal:
+
+defaults write com.bohemiancoding.sketch3.plist mirrorWebPort -int 8080",
+          "url": "https://www.sketch.com/support/mirror/change-ios-app-connection-port/"
+        }
+      },{
+        "@type": "Question",
+        "name": "Is there an app for Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no official Android version of Mirror, but other people have built apps for Android that work well with our Mac app such as Crystal.",
+          "url": "https://www.sketch.com/support/mirror/ios-android/"
+        }
+      }
+    ]
+  }
+</script>
+
+</main>
+
+
+  
+
+  <footer class="main-footer" id="footer" role="contentinfo"><div class="main-footer__footer pad-viewport">
+    <div class="wrapper"><section class="main-footer__nl">
+  <div class="main-footer__nl__text">
+    <h2 class="main-footer__nl__heading">Subscribe to our newsletter</h2>
+    <p class="main-footer__nl__blurb">A monthly digest of the latest Sketch news, articles, and resources.</p>
+  </div>
+  <form
+    action="https://api.hsforms.com/submissions/v3/integration/submit/7692458/73aef289-8f46-43b5-b859-dd68d024d89c"
+    data-controller="newsletter"
+    data-action="newsletter#process"
+    data-newsletter-remote="true"
+    class="main-footer__nl__form"
+    method="POST"
+  >
+    <div class="input-group main-footer__nl__form__input-group">
+      <!-- For screenreader purposes only -->
+      <label class="visuallyhidden" for="main-footer-nl-email">Email</label>
+      <input
+        type="email"
+        name="email"
+        required
+        autocomplete="email"
+        placeholder="Your email address"
+        aria-invalid="false"
+        aria-errormessage="main-footer-nl-error"
+        class="form-input form-input--in-group form-input--wide"
+        id="main-footer-nl-email"
+        data-newsletter-target="email"
+      />
+      <button
+        data-newsletter-target="button"
+        type="submit"
+        class="button button--primary button--in-group"
+        disabled="true"
+      >
+        Subscribe
+      </button>
+    </div>
+    <div class="form-option main-footer__nl__confirm" data-newsletter-target="gdprConfirm">
+      <input
+        class="form-checkbox"
+        type="checkbox"
+        name="gdpr"
+        id="main-footer-nl-gdpr"
+        data-action="change->newsletter#enable"
+      />
+      <label for="main-footer-nl-gdpr" class="form-option-label form-option-label--small"
+        >I agree to receive marketing emails from Sketch.</label
+      >
+    </div>
+  </form>
+</section>
+
+<nav class="main-footer__nav">
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Sketch
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-product"><li><a
+        class="main-footer__nav__item"
+        href="../../home/home.html"
+        
+      >Overview
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../design/design.html"
+        
+      >Design
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../collaborate/collaborate.html"
+        
+      >Collaborate
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../workspaces/workspaces.html"
+        
+      >Workspaces
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../pricing/pricing.html"
+        
+      >Pricing
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Apps
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-apps"><li><a
+        class="main-footer__nav__item"
+        href="../../apps/apps.html"
+        
+      >Apps
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../extensions/extensions.html"
+        
+      >Extensions
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../updates/updates.html"
+        
+      >Updates
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Support
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-resources"><li><a
+        class="main-footer__nav__item"
+        href="../../docs/docs.html"
+        
+      >Documentation
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../support.html"
+        
+      >Get Help
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../status_sketch_default.html"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      >Service Status
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" stroke="#000" class="main-footer__nav__item__action main-footer__nav__item__action--icon">
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.252 10.25l-.002-5.5h-5.5m-2 7.5l7-7"></path>
+</svg>
+
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../license/license.html"
+        
+      >Manage License
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Connect
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-connect"><li><a
+        class="main-footer__nav__item"
+        href="../../blog/blog.html"
+        
+      >Blog
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../community/community.html"
+        
+      >Events & Meetups
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../labs/labs.html"
+        
+      >Research Labs
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../developer_sketch_default.html"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      >Developer Platform
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Follow Us
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-social"><li><a
+        class="main-footer__nav__item"
+        href="https://twitter.com/sketch"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      ><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 20 20" width="20" fill="#000" class="main-footer__nav__item__icon"><path d="m19.960835 3.9053673c-.7374693.31906496-1.5249365.53642283-2.3540686.63566925.8449648-.50115343 1.4949377-1.29102373 1.8024249-2.23345466-.792467.45522121-1.6707637.78658943-2.6057248.97113857-.7466355-.78658943-1.8107579-1.27872046-2.9923753-1.27872046-2.2640723 0-4.09982917 1.8069411-4.09982917 4.03301379 0 .31988517.03749844.62746706.10582892.92192546-3.40819132-.15830215-6.42889879-1.76921105-8.45048123-4.20443943-.3558185.59219767-.55497687 1.2803609-.55497687 2.0300405 0 1.40257343.72496979 2.63536166 1.82325736 3.3596145-.67247198-.02132568-1.30494562-.20341416-1.85658931-.50525453v.05003332c0 1.95622085 1.41077456 3.58763519 3.28819633 3.95919409-.34415233.0910443-.70747052.1402574-1.079955.1402574-.26165577 0-.51247865-.0246066-.76330153-.0705388.52581142 1.6018865 2.03741511 2.7698775 3.83650681 2.8026862-1.39994167 1.0818681-3.17403441 1.7265597-5.08478813 1.7265597-.32498646 0-.64913962-.018865-.97495938-.0549546 1.82409066 1.1433844 3.97316778 1.8118624 6.29723762 1.8118624 7.54468568 0 11.66534728-6.148357 11.66534728-11.47157431 0-.17142564 0-.34449172-.0124995-.51673758.8008-.56513046 1.4999375-1.27954068 2.0499146-2.08991644z" fill-rule="evenodd"></path></svg>
+
+Twitter
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="https://www.instagram.com/sketchformac/"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      ><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 20 20" width="20" fill="#000" class="main-footer__nav__item__icon"><path d="m10 1c-2.445 0-2.75025.01125-3.71025.054-.9585.045-1.611.19575-2.18475.4185-.59175.2295-1.09425.53775-1.5945 1.038s-.80925 1.002-1.038 1.5945c-.22275.57375-.37425 1.22625-.4185 2.18475-.045.96-.054 1.26525-.054 3.71025s.01125 2.75025.054 3.71025c.045.95775.19575 1.611.4185 2.18475.2295.591.53775 1.09425 1.038 1.5945.50025.4995 1.002.80925 1.5945 1.038.5745.222 1.227.37425 2.18475.4185.96.045 1.26525.054 3.71025.054s2.75025-.01125 3.71025-.054c.95775-.045 1.611-.1965 2.18475-.4185.591-.2295 1.09425-.5385 1.5945-1.038.4995-.50025.80925-1.00125 1.038-1.5945.222-.57375.37425-1.227.4185-2.18475.045-.96.054-1.26525.054-3.71025s-.01125-2.75025-.054-3.71025c-.045-.95775-.1965-1.61175-.4185-2.18475-.2295-.59175-.5385-1.09425-1.038-1.5945-.50025-.50025-1.00125-.80925-1.5945-1.038-.57375-.22275-1.227-.37425-2.18475-.4185-.96-.045-1.26525-.054-3.71025-.054zm3.6375 1.67325c.8775.04125 1.35375.18675 1.67025.31125.4215.16275.72.35775 1.0365.672.31425.315.50925.61425.672 1.03575.123.3165.27.79275.30975 1.67025.04275.9495.0525 1.2345.0525 3.6375s-.01125 2.68875-.0555 3.6375c-.04575.8775-.192 1.35375-.31575 1.67025-.168.4215-.35925.72-.67425 1.0365-.31425.31425-.618.50925-1.035.672-.315.123-.79875.27-1.67625.30975-.9555.04275-1.23675.0525-3.64425.0525-2.40825 0-2.6895-.01125-3.64425-.0555-.87825-.04575-1.362-.192-1.677-.31575-.42675-.168-.72-.35925-1.03425-.67425-.31575-.31425-.5175-.618-.675-1.035-.12375-.315-.26925-.79875-.315-1.67625-.03375-.945-.04575-1.23675-.04575-3.633 0-2.397.012-2.6895.04575-3.64575.04575-.8775.19125-1.3605.315-1.6755.1575-.4275.35925-.72.675-1.03575.31425-.31425.6075-.51675 1.03425-.6735.315-.1245.78825-.27075 1.66575-.31575.95625-.03375 1.2375-.045 3.64425-.045l.03375.0225c2.40225 0 2.68875.012 3.6375.05325zm-3.6375 2.70525c-2.55375 0-4.6215 2.07-4.6215 4.6215 0 2.55375 2.07 4.6215 4.6215 4.6215 2.55375 0 4.6215-2.07 4.6215-4.6215 0-2.55375-2.07-4.6215-4.6215-4.6215zm0 7.6215c-1.6575 0-3-1.3425-3-3s1.3425-3 3-3 3 1.3425 3 3-1.3425 3-3 3zm5.8845-7.80375c0 .59625-.4845 1.08-1.08 1.08-.59625 0-1.08-.4845-1.08-1.08s.4845-1.07925087 1.08-1.07925087c.59475-.00074913 1.08.48375087 1.08 1.07925087z"></path></svg>
+
+Instagram
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="https://dribbble.com/sketch"
+        
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        
+      ><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 20 20" width="20" fill="#000" class="main-footer__nav__item__icon"><path d="m10 19c-4.96125 0-9-4.03875-9-9s4.03875-9 9-9 9 4.03875 9 9-4.03875 9-9 9zm7.59-7.7685c-.2625-.0825-2.3775-.71475-4.788-.3285 1.005 2.763 1.41525 5.013 1.494 5.481 1.725-1.16625 2.952-3.015 3.29625-5.1525zm-4.58625 5.856c-.11475-.675-.5625-3.024-1.6425-5.8275l-.0495.015c-4.3425 1.51125-5.895 4.51875-6.03 4.8 1.2975 1.0185 2.94 1.6245 4.7175 1.6245 1.065 0 2.0775-.2175 3-.6105zm-8.715-1.935c.174-.3 2.28375-3.79125 6.249-5.07375.10125-.03375.2025-.063.30375-.09-.195-.43875-.405-.87525-.624-1.305-3.84 1.1475-7.563 1.09875-7.9005 1.09125l-.003.234c0 1.97475.7485 3.77775 1.9755 5.14125zm-1.815-6.71625c.345.006 3.51225.0195 7.10775-.936-1.2735-2.2635-2.6475-4.1685-2.85-4.446-2.151 1.0125-3.7575 2.9925-4.257 5.3775zm5.72625-5.89725c.2115.285 1.60875 2.1855 2.8665 4.5 2.73375-1.02375 3.8925-2.58 4.02975-2.7765-1.3575-1.2075-3.1425-1.9395-5.09625-1.9395-.61875 0-1.2225.075-1.8.21375zm7.75125 2.61225c-.1635.2175-1.45125 1.86975-4.293 3.03.18.3675.3525.73875.51 1.1145.06.135.1125.27.165.3975 2.5575-.3225 5.1.195 5.355.2475-.015-1.815-.66-3.48-1.7325-4.785z"></path></svg>
+
+Dribbble
+</a></li></ul>
+</div>
+
+        
+
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Company
+  </h3>
+  <ul class="main-footer__nav__items" id="footer-links-company"><li><a
+        class="main-footer__nav__item"
+        href="../../about-us/about-us.html"
+        
+      >About Us
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../careers/careers.html"
+        
+      >Careers
+<span class="pill pill--secondary main-footer__nav__item__badge">
+  22
+</span>
+
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../../legal/legal.html"
+        
+      >Terms & Policies
+</a></li><li><a
+        class="main-footer__nav__item"
+        href="../contact/contact.html"
+        
+      >Contact Us
+</a></li></ul>
+</div>
+
+        
+      </nav>
+
+      <p class="main-footer__notice">&copy;
+        2022
+        Sketch B.V.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+  
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sketch",
+      "legalName" : "Sketch B.V.",
+      "url": "https://www.sketch.com",
+      "logo": "https://cdn.sketch.com/logo/horizontal_onetrust_trans.png",
+      "foundingDate": "2010",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Emanuel Sá"
+        },
+        {
+          "@type": "Person",
+          "name": "Pieter Omvlee"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "support@sketch.com"
+      },
+      "sameAs": [
+        "https://twitter.com/sketch",
+        "https://www.instagram.com/sketchformac/",
+        "https://dribbble.com/sketch",
+        "https://www.linkedin.com/company/sketchbv"
+      ]
+    }
+  </script>
+</body>
+
+</html>
